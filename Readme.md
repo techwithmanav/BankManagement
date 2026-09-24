@@ -9,9 +9,13 @@
 
 <br><br>
 
-### 🐍 A Simple & Interactive Python Banking Application
+### 🐍 Simple • Interactive • Modular Python Banking Application
 
 **💳 Account Management • 💰 Transactions • 📊 Balance • 🧾 History**
+
+<br>
+
+💻 **[GitHub Repository](https://github.com/techwithmanav/BankManagement)**
 
 </div>
 
@@ -19,39 +23,58 @@
 
 ## 📌 Overview
 
-**Bank Account Management System** is a Python-based console application that simulates basic banking operations.
+**Bank Account Management System** is a beginner-friendly Python application designed to simulate common banking operations through an interactive console interface.
 
-Customers can create accounts, manage their balance, deposit and withdraw money, check transactions, search accounts, and calculate interest.
+The system allows users to create accounts, manage balances, deposit and withdraw money, view transaction history, search accounts, check account status, and calculate interest.
 
-The project uses **multiple Python modules** to keep each banking operation organized.
+The project is divided into **multiple Python modules**, making the application easier to understand, organize, and maintain.
 
 ---
 
-## 🎯 Objectives
+## ✨ Key Highlights
 
-- 🐍 Practice Python programming fundamentals
-- 🧩 Understand functions and modules
+- 🏦 Interactive banking menu
+- 👤 Customer account management
+- 💰 Deposit and withdrawal operations
+- 📊 Real-time balance checking
+- 🧾 Transaction history
+- 🔍 Account search functionality
+- 🔐 Account status checking
+- 📈 Interest calculation
+- 👥 Customer management
+- 🧩 Modular Python structure
+- 📂 File handling using `open()`
+- 🐍 Built using core Python concepts
+
+---
+
+## 🎯 Project Objectives
+
+- 🐍 Strengthen Python programming fundamentals
+- ⚙️ Practice user-defined functions
+- 🧩 Understand Python modules
 - 📦 Work with List, Dictionary, Set, and Tuple
-- 🔄 Use loops and conditional statements
+- 🔄 Implement `for` and `while` loops
+- 🔀 Practice `if-else` conditions
 - 📂 Understand basic file handling
-- 👨‍💻 Build a practical real-world application
+- 🏦 Apply programming concepts to a real-world application
 
 ---
 
-## ✨ Features
+## 🏦 Features
 
 | 🏦 Feature | 📋 Description |
 |---|---|
 | 📝 Account Creation | Create a new bank account |
-| 👤 Account Details | View customer information |
-| 💰 Deposit Money | Add money to an account |
+| 👤 Account Details | View customer and account information |
+| 💵 Deposit Money | Add money to an account |
 | 💸 Withdrawal | Withdraw money with balance validation |
-| 📊 Balance Check | Check current balance |
-| 🧾 Transaction History | View account transactions |
-| 🔍 Account Search | Search an account by number |
-| 🔐 Account Status | Check account status |
+| 💰 Balance Check | View current account balance |
+| 🧾 Transaction History | View recorded transactions |
+| 🔍 Account Search | Search using an account number |
+| 🔐 Account Status | Check whether an account is active |
 | 📈 Interest Calculator | Calculate annual interest |
-| 👥 Customer List | View registered customers |
+| 👥 Customer List | View all registered customers |
 
 ---
 
@@ -59,21 +82,23 @@ The project uses **multiple Python modules** to keep each banking operation orga
 
 ### 💻 Technology
 
-- 🐍 Python 3.x
+<img src="https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square&logo=python&logoColor=white" />
 
-### 📚 Concepts Used
+### 📚 Python Concepts
 
-- 📦 Lists
-- 📖 Dictionaries
-- 🔹 Sets
-- 🔢 Tuples
-- 🔁 `for` Loop
-- 🔄 `while` Loop
-- 🔀 `if-else`
-- ⚙️ Functions
-- 🧩 Modules
-- 📂 File Handling
-- ➕ Basic Arithmetic
+| Concept | Used For |
+|---|---|
+| 📋 List | Account and transaction data |
+| 📖 Dictionary | Account storage and details |
+| 🔹 Set | Unique customers and account status |
+| 🔢 Tuple | Account information |
+| 🔁 `for` Loop | Iterating through records |
+| 🔄 `while` Loop | Transaction history and menus |
+| 🔀 `if-else` | Validation and decision making |
+| ⚙️ Functions | Individual banking operations |
+| 🧩 Modules | Separating application features |
+| 📂 File Handling | Opening and reading Python files |
+| ⌨️ User Input | Interactive customer operations |
 
 ---
 
@@ -85,18 +110,29 @@ The project uses **multiple Python modules** to keep each banking operation orga
                               ▼
                        📋 MAIN MENU
                               │
-             ┌────────────────┼────────────────┐
-             ▼                ▼                ▼
-       📝 Create Account   👤 Account       💰 Transactions
-                              │                │
-                              ▼                ▼
-                         📊 Balance      💵 Deposit / Withdraw
-                              │
+       ┌──────────────────────┼──────────────────────┐
+       ▼                      ▼                      ▼
+ 📝 Create Account      👤 Account Details      🔍 Search
+       │                      │                      │
+       └──────────────────────┼──────────────────────┘
                               ▼
-                      🧾 Transaction History
+                       💰 ACCOUNT SERVICES
                               │
+              ┌───────────────┼───────────────┐
+              ▼               ▼               ▼
+          💵 Deposit      💸 Withdraw      📊 Balance
+              │               │               │
+              └───────────────┼───────────────┘
                               ▼
-                         🔍 Other Services
+                       🧾 Transactions
+                              │
+                    ┌─────────┴─────────┐
+                    ▼                   ▼
+               🔐 Status          📈 Interest
+                    │                   │
+                    └─────────┬─────────┘
+                              ▼
+                        👥 Customers
                               │
                               ▼
                            🚪 EXIT
@@ -106,19 +142,19 @@ The project uses **multiple Python modules** to keep each banking operation orga
 
 ## 🧩 Project Modules
 
-| 📄 File                 | ⚙️ Purpose                 |
-| ----------------------- | -------------------------- |
-| `accountCreation.py`    | 📝 Create account          |
-| `accountDisplay.py`     | 👤 Display account details |
-| `transactionHistory.py` | 🧾 Show transactions       |
-| `accountSearch.py`      | 🔍 Search account          |
-| `balanceCheck.py`       | 📊 Check balance           |
-| `withdrawal.py`         | 💸 Withdraw money          |
-| `accountStatus.py`      | 🔐 Check account status    |
-| `depositMoney.py`       | 💰 Deposit money           |
-| `calculateInterest.py`  | 📈 Calculate interest      |
-| `customerOperations.py` | 👥 Manage customers        |
-| `main.py`               | 🏠 Control the application |
+| 📄 File                 | ⚙️ Responsibility                    |
+| ----------------------- | ------------------------------------ |
+| `accountCreation.py`    | 📝 Creates new accounts              |
+| `accountDisplay.py`     | 👤 Displays account details          |
+| `transactionHistory.py` | 🧾 Displays transactions             |
+| `accountSearch.py`      | 🔍 Searches accounts                 |
+| `balanceCheck.py`       | 💰 Checks account balance            |
+| `withdrawal.py`         | 💸 Handles withdrawals               |
+| `accountStatus.py`      | 🔐 Checks account status             |
+| `depositMoney.py`       | 💵 Handles deposits                  |
+| `calculateInterest.py`  | 📈 Calculates interest               |
+| `customerOperations.py` | 👥 Manages customer list             |
+| `main.py`               | 🏠 Controls the complete application |
 
 ---
 
@@ -128,6 +164,7 @@ The project uses **multiple Python modules** to keep each banking operation orga
 🏦 BankAccountManagement/
 │
 ├── 🏠 main.py
+│
 ├── 📝 accountCreation.py
 ├── 👤 accountDisplay.py
 ├── 🧾 transactionHistory.py
@@ -135,41 +172,56 @@ The project uses **multiple Python modules** to keep each banking operation orga
 ├── 📊 balanceCheck.py
 ├── 💸 withdrawal.py
 ├── 🔐 accountStatus.py
-├── 💰 depositMoney.py
+├── 💵 depositMoney.py
 ├── 📈 calculateInterest.py
 └── 👥 customerOperations.py
 ```
 
 ---
 
-## ✅ Assignment Requirements
+## 📋 Assignment Requirements
 
-| Requirement              | Status |
-| ------------------------ | ------ |
-| 🔁 4 files using loops   | ✅      |
-| 🔀 3 files using if-else | ✅      |
-| ⚙️ 3 files of choice     | ✅      |
-| 📋 List                  | ✅      |
-| 📖 Dictionary            | ✅      |
-| 🔹 Set                   | ✅      |
-| 🔢 Tuple                 | ✅      |
-| 🧩 Multiple modules      | ✅      |
-| 📂 File handling         | ✅      |
-| ⌨️ User input            | ✅      |
+This project was designed according to the required Python assignment structure.
+
+| Requirement                     | Status |
+| ------------------------------- | :----: |
+| 🔁 4 files using loops          |    ✅   |
+| 🔀 3 files using if-else        |    ✅   |
+| ⚙️ 3 files of choice            |    ✅   |
+| 📋 List                         |    ✅   |
+| 📖 Dictionary                   |    ✅   |
+| 🔹 Set                          |    ✅   |
+| 🔢 Tuple                        |    ✅   |
+| 🧩 Multiple Python modules      |    ✅   |
+| 📂 File handling using `open()` |    ✅   |
+| ⌨️ User input                   |    ✅   |
+| ⚙️ User-defined functions       |    ✅   |
 
 ---
 
-## 🚀 How to Run
+## 🚀 Getting Started
 
-### 1️⃣ Requirements
+### 📌 Requirements
 
 * 🐍 Python 3.x
 * 💻 VS Code / PyCharm / IDLE
-* 📦 No external libraries required
+* 📦 No external Python libraries required
 
-### 2️⃣ Run the Application
+### ▶️ Run the Project
 
-Open the project folder in your terminal and run:
+Clone the repository:
+
+```bash
+git clone https://github.com/techwithmanav/BankManagement.git
+```
+
+Move into the project folder:
+
+```bash
+cd BankManagement
+```
+
+Run the application:
 
 ```bash
 python main.py
@@ -177,49 +229,103 @@ python main.py
 
 ---
 
+## 💻 Main Menu
+
+```text
+==========================================
+              🏦 MAIN MENU
+==========================================
+
+1. 📝 Create New Account
+2. 👤 Account Details
+3. 💰 Check Balance
+4. 💵 Deposit Money
+5. 💸 Withdraw Money
+6. 🧾 Transaction History
+7. 🔐 Account Status
+8. 🔍 Search Account
+9. 📈 Calculate Interest
+10. 👥 View All Customers
+11. 🚪 Exit
+```
+
+---
+
 ## 🎓 Learning Outcomes
 
-Through this project, you can understand:
+This project helped develop practical understanding of:
 
 * 🐍 Python fundamentals
 * ⚙️ User-defined functions
 * 🧩 Modular programming
 * 📦 Python data structures
-* 🔄 Loops and conditions
+* 🔄 Loops and conditional logic
 * ⌨️ User input handling
 * 📂 File handling
+* 🧠 Problem-solving
 * 🏦 Real-world application design
 
 ---
 
 ## 🔮 Future Improvements
 
+The project can be extended with:
+
 * 💾 Permanent data storage
-* 🔐 PIN-based login
+* 🗄️ MySQL / SQLite database
+* 🔐 PIN-based authentication
 * 🔄 Account-to-account transfers
-* 🗑️ Account deletion
 * 🧾 Bank statement generation
-* 🗄️ Database integration
+* 🗑️ Account deletion
 * 🖥️ Graphical User Interface
-* 👨‍💼 Admin management system
+* 🌐 Web-based banking interface
+* 👨‍💼 Admin dashboard
+* ☁️ Cloud-based data storage
+
+---
+
+## ⚠️ Current Limitation
+
+The current version stores account information **temporarily in memory**.
+
+Therefore, account data will be lost when the program is closed.
+
+> 💡 Database integration can be added in the future for permanent storage.
+
+---
+
+## 🌐 Project Links
+
+<div align="center">
+
+### 🚀 Explore the Project
+
+💻 **[GitHub Repository](https://github.com/techwithmanav/BankManagement)**
+
+</div>
 
 ---
 
 ## 🏁 Conclusion
 
-The **Bank Account Management System** combines fundamental Python concepts to create a simple and interactive banking application.
+The **Bank Account Management System** is a practical Python mini-project that combines fundamental programming concepts into an interactive banking application.
 
-Its modular structure makes the project **easy to understand, maintain, and extend**.
+Its modular structure provides a clean foundation for adding advanced features such as databases, authentication, transfers, and graphical interfaces.
 
 ---
 
 <div align="center">
 
-### 🏦💰 Built with Python 🐍
+## 🏦💰 Built with Python 🐍
 
 **Simple • Interactive • Modular • Beginner Friendly**
 
-⭐ If you found this project useful, consider giving it a star!
+<br>
+
+⭐ **If you found this project useful, consider giving it a star!**
+
+<br>
+
+**👨‍💻 Developed as a Python Mini Project**
 
 </div>
-
